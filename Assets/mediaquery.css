@@ -1,0 +1,15 @@
+/* Hide desktop nav on small screens */
+
+  
+  @media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+}
+
+/* Hide mobile nav on large screens */
+@media (min-width: 769px) {
+    #hamburger-nav {
+        display: none;
+    }
+}

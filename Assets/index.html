@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#publication">Publication</a></li>
+                <li><a href="#et cetera" onclick="showPopup()">Et Cetera</a></li>
+                <div id="popup" class="popup hidden">
+                  <p>Coming Soon!</p>
+              </div>
+                </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+    <div class="logo">Maliha Bintay Zaman</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+                <li>
+                  <a id="etcetera-btn" href="#etcetera" onclick="showPopup()">Et Cetera</a>
+              </li>
+                <div id="popup" class="popup">
+                  <p style="color:brown;">Coming Soon!</p>
+              </div>
+    </div>
+    </div>
+</nav>
+<hr>
+<section id="profile">
+<div class="section__pic-container">
+<img src="./Images/sample-modified.png" alt="Maliha Bintay Zaman" />
+</div>
+<div class="section_text">
+<p class="section_text_p1">Hello, I'm</p>
+<h5 class="title">Maliha Bintay Zaman</h5>
+<p class="section_text_p2">Prospective Graduate Student || Aspiring Researcher || Tech Explorer</p>
+<!-- New Box for About Me -->
+<div class="about-me-box">
+    <p>
+      I am passionate about exploring the intersection of technology and research. 
+      With a keen interest in machine learning, data science, and computer vision, 
+      I aim to solve real-world challenges and contribute to meaningful innovations.
+    </p>
+  </div>
+  <!-- End of New Box -->
+  <div id="socials-container">
+    <span class="straight-line"></span>
+    <div class="social-icons">
+      <img
+        src="./Images/linkedin.png"
+        alt="My LinkedIn profile"
+        class="icon"
+        onclick="location.href='https://www.linkedin.com/in/maliha-bintay-zaman/'"
+      />
+      <img
+        src="./Images/github.png"
+        alt="My GitHub profile"
+        class="icon"
+        onclick="location.href='https://github.com/malihaarchi18'"
+      />
+      <img
+        src="./Images/googlescholar.png"
+        alt="My Google Scholar profile"
+        class="icon"
+        onclick="location.href='https://scholar.google.com/citations?user=example'"
+      />
+      <img
+        src="./Images/codeforces.png"
+        alt="My Codeforces profile"
+        class="icon"
+        onclick="location.href='https://scholar.google.com/citations?user=example'"
+      />
+    </div>
+    
+  </div>
+  
+  <a href="path/to/your/resume.pdf" class="download-btn" download>Download Resume</a>
+    </div>
+    </section>
+    <br>
+    <hr>
+    
+    <h1 class="title">Education</h1>
+    <hr class="title-line">
+    <section id="education">
+      <div class="education-item">
+        <div class="education-text">
+          <h3>Khulna University</h3>
+          <p>B.Sc. in Computer Science and Engineering (2023)</p>
+          <p>Thesis: Investigating Context-Adaptation Bugs in Micro-clones</p>
+          <p>Supervisor: Dr. Manishankar Mondal</p>
+        </div>
+        <div class="education-logo">
+          <img src="./Images/KuLogo.png" alt="Khulna University Logo" />
+        </div>
+      </div>
+      <hr>
+      <div class="education-item reverse">
+        <div class="education-logo">
+          <img src="./Images/college logo.png" alt="College Logo" />
+        </div>
+        <div class="education-text">
+          <h3>Govt. Michael Madhusudan College, Jashore</h3>
+          <p>Higher Secondary Certificate (Science)</p>
+          <p>Passing Year: 2017</p>
+        </div>
+      </div>
+      <hr>
+      <div class="education-item">
+        <div class="education-text">
+          <h3>Police Line Secondary School, Jashore</h3>
+          <p>Secondary School Certificate (Science)</p>
+          <p>Passing Year: 2015</p>
+        </div>
+        <div class="education-logo">
+          <img src="./Images/school.jpg" alt="School Logo" />
+        </div>
+      </div>
+    </section>
+    <br>
+<hr>
+
+<section id="skills">
+<h1 class="title">Skills</h1>
+    <hr class="title-line">
+  <div class="skills-container">
+      <!-- Languages Section -->
+      <div class="skills-category">
+          <h3 class="category-title">Languages</h3>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              C++
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              PHP
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              Python
+          </div>
+          <div class="skill-item">
+            <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+             Java
+        </div>
+      </div>
+
+      <!-- Tools Section -->
+      <div class="skills-category">
+          <h3 class="category-title">Web Technology</h3>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              Laravel
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              CSS3
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              Bootstrap
+          </div>
+          <div class="skill-item">
+            <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+            Vue.js
+        </div>
+      </div>
+
+      <!-- Other Skills Section -->
+      <div class="skills-category">
+          <h3 class="category-title">Tools & Platforms</h3>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              Git
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              SVN
+          </div>
+          <div class="skill-item">
+              <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+              Visual Studio
+          </div>
+          <div class="skill-item">
+            <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+            Matlab
+        </div>
+        <div class="skill-item">
+          <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+           Jupyter Notebook
+      </div>
+      </div>
+
+      <div class="skills-category">
+        <h3 class="category-title">Operating Systems</h3>
+        <div class="skill-item">
+            <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+            Windows
+        </div>
+        <div class="skill-item">
+            <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+            Linux
+        </div>
+    </div>
+
+    <div class="skills-category">
+      <h3 class="category-title">Database</h3>
+      <div class="skill-item">
+          <img src="./Images/checkmark.png" alt="checkmark icon" class="icon" />
+          MySQL
+      </div>
+  </div>
+  </div>
+</section>
+
+
+
+<br>
+<hr>
+
+<section id="experience">
+  <h1 class="title">Experience</h1>
+  <hr class="title-line">
+  <div class="details-container">
+    <div class="article-container">
+      <h2 class="skills-sub-title">Research Assistant</h2>
+      <article>
+        <img
+          src="./Images/KuLogo.png"
+          alt="skill icon"
+          class="icon"
+        />
+        <div>
+          <h3>Khulna University</h3>
+          <p> <strong>Project Name: Automation of detection and fixing of context-adaptation bugs in micro-clones </strong></p>
+          <p><strong>Duration: March, 2022 - December, 2022</strong></p>
+          <p><strong>Key Responsibilites:</strong></p>
+          <ul class="responsibilities">
+            <li>Investigate context adaptation bugs for micro-clones and manually analyze them</li>
+            <li>Compare the intensity of context-bugs between regular clones and micro-clones</li>
+         </ul>
+         
+
+        </div>
+      </article>
+      
+    </div>
+  </div>
+
+  <div class="details-container">
+    <div class="article-container">
+      <h2 class="skills-sub-title">Industrial Training</h2>
+      <article>
+        <img
+          src="./Images/KuLogo.png"
+          alt="skill icon"
+          class="icon"
+        />
+        <div>
+          <h3>Information, Communication & Technology (ICT) Cell</h3>
+          <p> <strong>Khulna University, Khulna, Bangladesh</strong></p>
+          <p><strong>Duration: June, 2022</strong></p>
+          <p><strong>Activities:</strong></p>
+          <ul class="responsibilities">
+            <li>Training workshops</li>
+            <li>Understanding of networks and system design with real-world implementations</li>
+         </ul>
+         
+
+        </div>
+      </article>
+      
+    </div>
+  </div>
+  
+</section>
+<br>
+<hr>
+
+<section id="project">
+  <h1 class="title">Projects</h1>
+  <hr class="title-line">
+  <div class="project-details-container">
+    <!-- Project 1 -->
+    <div class="details-container color-container">
+      <h2 class="project-sub-title project-title">Homemade Product Market</h2>
+      <div class="article-container">
+        <div class="slideshow-container">
+          <div class="slides">
+            <img src="./Images/f.jpg" alt="Project Image 1" class="project-img" />
+          </div>
+          <div class="slides">
+            <img src="./Images/d.jpg" alt="Project Image 2" class="project-img" />
+          </div>
+          <div class="slides">
+            <img src="./Images/e.jpg" alt="Project Image 3" class="project-img" />
+          </div>
+          <!-- Navigation buttons -->
+          <button class="prev" onclick="changeSlide(-1)">❮</button>
+          <button class="next" onclick="changeSlide(1)">❯</button>
+        </div>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/malihaarchi18/Homemade-Product-Market/'">
+          Github
+        </button>
+        <button class="btn btn-color-2 project-btn" onclick="openDescriptionPopup(this)">
+          Description
+        </button>
+        <div class="popup" style="display: none;">
+          <p>
+            A business platform for homemade commodities with integration of payment gateway 
+            SSLCOMMERZ. 
+          </p>
+          <button class="close-btn" onclick="closeDescriptionPopup(this)">X</button>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Project 2 -->
+    <div class="details-container color-container">
+      <h2 class="project-sub-title project-title">Question Bank Simplifier</h2>
+      <div class="article-container">
+        <img src="./Images/b.png" alt="Project 2" class="project-img" />
+      </div>
+      <div class="btn-container" style="position: relative;">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/malihaarchi18/Question-Bank-Simplifier'">
+          Github
+        </button>
+        <button class="btn btn-color-2 project-btn description-btn" onclick="openDescriptionPopup(this)">
+          Description
+        </button>
+        <!-- Popup container -->
+        <div class="popup" style="display: none;">
+          <p>
+            A software system for assisting teachers to automatically create exam question sets based 
+on some parameters (i.e. difficulty level, topic and weights)
+          </p>
+          <button class="close-btn" onclick="closeDescriptionPopup(this)">X</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+ </div>
+
+</section>
+
+
+<br>
+<hr>
+<section id="publication">
+  <div class="title">Publication</div>
+  <hr class="title-line" />
+  <div class="publications-container">
+    <div class="publication-item">
+      <h3 class="publication-title">
+      <a href="https://doi.ieeecomputersociety.org/10.1109/APSEC60848.2023.00034"> Context-Adaptation Bugs in Micro-Clones </a>
+      </h3>
+      <p class="publication-authors">
+        Sayeedi Mottakin, <b>Maliha Bintay Zaman</b>, Dr. Manishankar Mondal, and Atanu Shome
+      </p>
+      <p class="publication-conference">
+        In Proceeding of The <strong>2023 30th Asia-Pacific Software Engineering Conference (APSEC),</strong> Seoul, Korea, Republic of, 2023, pp. 239-248
+      </p>
+      <p class="publication-conference">
+        DOI: <b>10.1109/APSEC60848.2023.00034</b>
+      </p>
+      <div class="publication-links">
+        <a href="https://scholar.google.com/citations?user=YNXFfVsAAAAJ&hl=en" class="button scholar" target="_blank">
+          <img src="./Images/googlescholar.png" alt="Google Scholar" class="icon" />
+        </a>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4426195" class="button pdf" target="_blank">Pre-print PDF</a>
+        <button class="button abstract" onclick="showAbstract('abstract1')">Abstract</button>
+      </div>
+      <div id="abstract1" class="abstract-content">
+        <p>
+          Whenever we copy a code fragment from one place of a code-base and paste it to another place, the pasted fragment might appear to be a buggy fragment if it is not properly adapted to its surrounding code. In such a situation, the bug that is contained in the pasted fragment because of not adapting it to its context is known as a context-adaptation bug (simply, context bug). In this research, we investigate the context adaptation bugs in micro-clones (code clones of at most 4LOC) through analyzing their evolutionary history from thousands of revisions of our subject systems. An existing study has investigated such bugs in regular code clones (code clones of at least 5LOC). However, context bugs in micro-clones have never been studied. If microclones also contain context bugs, automatic support for repairing such bugs in micro-clones is important as well. We automatically identify patterns that indicate fixes of context bugs in microclones, and then analyze and compare the intensity of such bugs in regular and micro-clones. We also identify the vulnerable coding patterns that introduce context-bugs in micro-clones. According to our study on thousands of revisions of five subject systems written in three different programming languages, micro-clones generally have a higher possibility of containing context bugs during evolution compared to regular clones. Making microclones through copy/pasting across different files has a significantly higher tendency of introducing context bugs compared to cloning within the same file. We also realize that Type 1 and Type 3 micro-clones are generally more vulnerable than Type 2 micro-clones. Our findings are important for devising automatic mechanisms for fixing context bugs. We have also identified risky cloning patterns so that programmers can avoid those patterns during coding to minimize context-bugs in micro-clones.
+        </p>
+      </div>
+    </div>
+    <!-- Add more publications as needed -->
+  </div>
+</section>
+
+<br>
+<hr>
+<section id="contact-form">
+  <div class="title">Let's Connect!!</div>
+  <hr class="title-line" />
+  <form id="form" action="mailto:malihabintayzaman@gmail.com" method="POST" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<footer>
+  <p>Created by Maliha Bintay Zaman</p>
+  <p>Last updated: <span id="last-update"></span></p>
+</footer>
+
+<!-- HTML code to display the date -->
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+<script src="script.js"></script>
+    
+</body>
+</html>
