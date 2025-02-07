@@ -30,10 +30,43 @@
     }
     #hamburger-nav {
         display: flex; /* Show hamburger menu */
-        height: auto; /* Ensure height is defined */
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start; /* Start from top */
+        
+        position: fixed; /* Ensure it's full-screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        background-color: white; /* Adjust as needed */
+        z-index: 1000;
+        overflow-y: scroll; /* Enable scrolling if needed */
+        padding-top: 20px;
+    }
+
+    /* Make sure that the links inside the hamburger menu are flexibly aligned */
+    #hamburger-nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem; /* Spacing between items */
+        padding: 10px 0; /* Adjust top and bottom padding */
+    }
+
+    #hamburger-nav .nav-links li {
+        width: 100%; /* Ensures full width for each item */
+        text-align: center;
+        padding: 10px 0; /* Padding for each list item */
+        font-size: 1.25rem; /* Adjust text size for mobile */
+    }
+
+    /* For any other content inside the hamburger menu, ensure it's flexible and scrollable */
+    #hamburger-nav .nav-content {
+        flex-grow: 1; /* Make sure this container grows if needed */
+        overflow-y: auto; /* Allow scroll if content exceeds the screen height */
+        max-height: 90vh; /* Ensure it doesn't go beyond 90% of the screen */
     }
     #experience,
     .experience-details-container {
