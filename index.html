@@ -8,53 +8,62 @@
     <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#publication">Publication</a></li>
-                <li><a href="#et cetera" onclick="showPopup()">Et Cetera</a></li>
-                <div id="popup" class="popup hidden">
-                  <p>Coming Soon!</p>
-              </div>
-                </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-    <div class="logo">Maliha Bintay Zaman</div>
-    <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-    </div>
-    <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
-                <li>
-                  <a id="etcetera-btn" href="#etcetera" onclick="showPopup()">Et Cetera</a>
-              </li>
-                <div id="popup" class="popup">
-                  <p style="color:brown;">Coming Soon!</p>
-              </div>
-    </div>
-    </div>
+    <!-- Desktop Navigation -->
+<nav id="desktop-nav">
+  <div>
+      <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li>
+              <a id="etcetera-btn" href="#etcetera" onclick="showPopup('popup')">Et Cetera</a>
+          </li>
+      </ul>
+  </div>
 </nav>
+
+<!-- Mobile Navigation (Hamburger Menu) -->
+<nav id="hamburger-nav">
+  <div class="logo">Maliha Bintay Zaman</div>
+  <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+          <li>
+              <a id="etcetera-btn-mobile" href="#etcetera" onclick="showPopup('popup-mobile')">Et Cetera</a>
+          </li>
+      </div>
+  </div>
+</nav>
+
+<!-- Popups (Outside Navigation) -->
+<div id="popup" class="popup hidden">
+  <p style="color:brown;">Coming Soon!</p>
+</div>
+
+<div id="popup-mobile" class="popup hidden">
+  <p style="color:brown;">Coming Soon!</p>
+</div>
+
 <hr>
 <section id="profile">
 <div class="section__pic-container">
 <img src="./Images/sample-modified.png" alt="Maliha Bintay Zaman" />
 </div>
 <div class="section_text">
-<p class="section_text_p1">Hello, I'm</p>
+<p class="section_text_p1">Hi, I'm</p>
 <h5 class="title">Maliha Bintay Zaman</h5>
 <p class="section_text_p2">Prospective Graduate Student || Aspiring Researcher || Tech Explorer</p>
 <!-- New Box for About Me -->

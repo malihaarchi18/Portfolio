@@ -1081,7 +1081,7 @@ footer p {
   background-color: #45a049;
 }
 
-.popup {
+.popup hidden {
   position: absolute;
   background-color: #f9f9f9;
   border: 1px solid #ccc;

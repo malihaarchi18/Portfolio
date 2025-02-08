@@ -56,26 +56,33 @@ year: "numeric", month: "long", day: "numeric"
 // Display the formatted date in the footer
 lastUpdateElement.textContent = currentDate;
 
-function showPopup() {
-  const etceteraBtn = document.getElementById("etcetera-btn");
-  const popup = document.getElementById("popup");
+function showPopup(popupId) {
+  const etceteraBtn = document.getElementById(
+      popupId === "popup" ? "etcetera-btn" : "etcetera-btn-mobile"
+  );
+  const popup = document.getElementById(popupId);
 
-  // Get the button's position relative to the viewport
+  if (!etceteraBtn || !popup) return; // Safety check
+
   const rect = etceteraBtn.getBoundingClientRect();
 
-  // Calculate the popup's position relative to the page
-  const popupLeft = rect.left + window.scrollX + 1150; // Adjust 10px to the right of the button
-  const popupTop = rect.bottom + window.scrollY + 85; // Adjust 5px below the button
+  let popupLeft, popupTop;
 
-  // Apply calculated positions
+  if (window.innerWidth > 768) {
+      // Desktop positioning
+      popupLeft = rect.left + window.scrollX + 10;
+      popupTop = rect.bottom + window.scrollY + 5;
+  } else {
+      // Mobile positioning - Center it
+      popupLeft = (window.innerWidth / 2) - (popup.offsetWidth / 2);
+      popupTop = rect.bottom + window.scrollY + 10;
+  }
+
   popup.style.position = "absolute";
   popup.style.left = `${popupLeft}px`;
   popup.style.top = `${popupTop}px`;
-
-  // Display the popup
   popup.style.display = "block";
 
-  // Hide the popup after 3 seconds
   setTimeout(() => {
       popup.style.display = "none";
   }, 3000);
