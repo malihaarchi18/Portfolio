@@ -174,7 +174,7 @@ section{
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 4vh;
 
   
 }
@@ -401,10 +401,20 @@ section{
 @media (max-width: 768px) {
     .education-item {
         grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+        display: flex; /* Use flexbox for better alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align images and text */
+        text-align: center
     }
+    .education-logo {
+      display: flex;
+      justify-content: center; /* Center the logo horizontally */
+      align-items: center; /* Align vertically */
+      width: 100%;
+  }
     .education-logo img {
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 80px;
+        max-height: 80px;
     }
 }
 

@@ -11,7 +11,7 @@
 /* For screens smaller than 1400px */
 @media screen and (max-width: 1400px) {
     #profile {
-        height: 83vh;
+        height: fit-content;
         margin-bottom: 6rem;
     }
     .about-containers {
@@ -32,7 +32,6 @@
         display: flex; /* Show hamburger menu */
     
     }
-    
     #experience,
     .experience-details-container {
         margin-top: 2rem;
