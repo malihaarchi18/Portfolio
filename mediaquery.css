@@ -33,8 +33,11 @@
     
     }
     #experience,
-    .experience-details-container {
-       
+    .details-container {
+       width: fit-content;
+    }
+    .article-container {
+        width: fit-content;
     }
     #profile,
     .section-container {
