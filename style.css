@@ -102,7 +102,7 @@ cursor: pointer;
     position:absolute;
     top:100%;
     right:0;
-    background-color: white;
+    background: #f9f9f9; 
     width:fit-content;
     max-height: 0;
     overflow: hidden;
