@@ -1106,3 +1106,30 @@ footer p {
 .popup p{
   color: rgba(238, 9, 9, 0.999);
 }
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #fdfdfd;
+}
+
+.text-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.text-box li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.text-box a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.text-box a:hover {
+  text-decoration: underline;
+}
